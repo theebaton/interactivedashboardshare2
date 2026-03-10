@@ -8,7 +8,7 @@ interface StatsProps {
   latestDocDate: string;
 }
 
-const StatsCards: React.FC<StatsProps> = ({ totalDocs, totalPersonnel, activeDepartments, latestDocDate }) => {
+const StatsCard: React.FC<StatsProps> = ({ totalDocs, totalPersonnel, activeDepartments, latestDocDate }) => {
   const cards = [
     {
       title: "เอกสารที่ประมวลผลแล้ว",
@@ -58,4 +58,4 @@ const StatsCards: React.FC<StatsProps> = ({ totalDocs, totalPersonnel, activeDep
   );
 };
 
-export default StatsCards;
+export default StatsCard;

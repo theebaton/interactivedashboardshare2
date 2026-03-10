@@ -4,7 +4,7 @@ import { RefreshCw, Bot, Link as LinkIcon, AlertCircle, Database, LayoutDashboar
 import { CSV_DATA } from './constants';
 import { DocumentData, FilterState, RawCsvRow } from './types';
 import { transformData } from './utils';
-import StatsCards from './components/StatsCards';
+import StatsCard from './components/StatsCard';
 import ChartsSection from './components/ChartsSection';
 import DocumentTable from './components/DocumentTable';
 import FilterBar from './components/FilterBar';
@@ -198,7 +198,7 @@ const App: React.FC = () => {
           </p>
         </div>
 
-        <StatsCards 
+        <StatsCard 
           totalDocs={uniqueDocsCount}
           totalPersonnel={uniquePersonnelCount}
           activeDepartments={uniqueDepts.length}
